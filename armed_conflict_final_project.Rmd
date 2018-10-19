@@ -7,4 +7,16 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
+data <- read_csv("ucdp-prio-acd-181.csv")
+
+
 ```
+
+## Summary
+The data I plan to use has been collected by the Uppsala Conflict Data Program (UCDP) of the Department of Peace and Conflict Research and the International Peace Research Institute (PRIO) in Oslo. The chosen dataset contains information on global armed conflicts in the period 1946-2017. In this context, armed conflict refers to events of organized violence between a government/state and another party which results in at least 25 violence-related deaths in a given year. The different types of armed conflict include extrasystemic, interstate, internal and internationalized internal. 
+
+The dataset consists of 2330 observations. Each observation represents a distinct armed conflict. 
+
